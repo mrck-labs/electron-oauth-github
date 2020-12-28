@@ -1,6 +1,5 @@
 const {BrowserWindow, app, ipcMain} = require("electron")
 
-
 let OAuthWindow;
 
 const createOAuthWindow = () => {
