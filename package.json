@@ -1,5 +1,5 @@
 {
-  "name": "electron-oauth-github",
+  "name": "@electron-utils/electron-oauth-github",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -18,5 +18,8 @@
   },
   "dependencies": {
     "isomorphic-fetch": "^3.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
