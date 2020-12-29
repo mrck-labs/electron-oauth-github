@@ -1,0 +1,34 @@
+name: NPM Publish
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+          registry-url: https://registry.npmjs.org/
+      - name: Building deps
+        run: yarn
+      - name: Prepare repository
+        run: git reset --hard HEAD
+      - name: Publishing on npm registry
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+        run: |
+          git config --global user.name 'Marcin Krawczyk'
+          git config --global user.email 'marckraw@icloud.com'
+          git log -n 1
+          git status
+          npm publish
