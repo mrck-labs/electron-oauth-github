@@ -15,6 +15,14 @@ To obtain Access Token, (which is the reason of this package), you need to use o
 function. This function uses `getAuthorizationCode` underneath. When you obtain access token, you can than make request to Github Rest API with it.
 
 ```
+npm install @electron-utils/electron-oauth-github
+```
+
+```
+yarn add @electron-utils/electron-oauth-github
+```
+
+```
 const {getAccessToken} = require('@electron-utils/electron-oauth-github')
 
 try {
