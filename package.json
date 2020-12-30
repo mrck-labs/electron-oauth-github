@@ -1,6 +1,6 @@
 {
   "name": "@electron-utils/electron-oauth-github",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Electron helper for OAuth authorization to Github using web application flow strategy.",
   "keywords": [
     "electron",
