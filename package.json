@@ -1,7 +1,13 @@
 {
   "name": "@electron-utils/electron-oauth-github",
-  "version": "0.2.2",
-  "description": "",
+  "version": "0.2.3",
+  "description": "Electron helper for OAuth authorization to Github using web application flow strategy.",
+  "keywords": [
+    "electron",
+    "github",
+    "oauth",
+    "authorization"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
